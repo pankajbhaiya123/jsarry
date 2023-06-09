@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array javascript</title>
+    <style>
+        body {
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background:linear-gradient(rgb(157, 0, 255),rgb(235, 177, 135),rgb(85, 128, 0))">
+    <script>
+        var arr = ["devesh", "somu", "pankaj", "kumar", "atul"];
+        document.writeln("unsortedarray===>" + arr + "<br>");
+        arr.sort();
+        console.log(arr);
+        document.writeln("sortedarray===>" + arr + "<br>");
+        const ary = [35, 23, 5, 34, 100];
+        document.writeln(" array1==>" + ary + "<br>");
+        //adding two array
+        const ary2 = [40, 52];
+        document.writeln(" array2==>" + ary2 + "<br>");
+        const newary = [...ary, ...ary2];
+        console.log(newary)
+        document.writeln("new array==>" + newary + "<br>");
+        //deleting array element
+        document.writeln("before deletion==>" + newary + "<br>");
+        delete (newary[4]);
+        console.log(newary)
+        document.writeln("after deletion==>" + newary);
+
+
+
+    </script>
+</body>
+
+</html>
